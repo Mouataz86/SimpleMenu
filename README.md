@@ -57,16 +57,14 @@ Before installing, ensure you have the following:
 
 ## 📦 Installation
 
-1. Download the latest release from the [releases](https://github.com/your-username/SimpleMenu/releases) page.
+1. Download the latest release from the [releases](https://github.com/Mouataz86/SimpleMenu/releases) page.
 2. Extract the files.
 3. Copy the following to your `Grand Theft Auto V/scripts/` folder:
-scripts/
-├── SimpleMenu.dll
-├── SimpleMenu.ini
-├── Newtonsoft.Json.dll
-├── LemonUI.SHVDN3.dll
-└── SM Data/
-└── vehicles.json
+- SimpleMenu.dll
+- SimpleMenu.ini
+- Newtonsoft.Json.dll
+- LemonUI.SHVDN3.dll
+- SM Data ( Contains Vehicles.json )
 
 
 4. Launch the game and press your configured menu key (default is `F10`).
@@ -84,13 +82,11 @@ scripts/
 ## 📁 File Structure
 
 Grand Theft Auto V/
-└── scripts/
-├── SimpleMenu.dll
-├── SimpleMenu.ini
-├── Newtonsoft.Json.dll
-├── LemonUI.SHVDN3.dll
-└── SM Data/
-└── vehicles.json
+- SimpleMenu.dll
+- SimpleMenu.ini
+- Newtonsoft.Json.dll
+- LemonUI.SHVDN3.dll
+- SM Data ( Contains Vehicles.json )
 
 
 - `SimpleMenu.dll` — The compiled mod menu script.
