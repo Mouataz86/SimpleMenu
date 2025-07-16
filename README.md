@@ -1,4 +1,5 @@
 <h1 align="center">Simple Mod Menu For GTA V Single Player [ Open Source ]</h1>
+<h2 align="center">The Latest Version Currently Is: V1.1</h2>
 
 <p align="center">
   <img src="https://img.shields.io/badge/version-v1.1-blue" alt="Version">
