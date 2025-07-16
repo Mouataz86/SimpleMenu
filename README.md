@@ -1,7 +1,7 @@
 <h1 align="center">Simple Mod Menu For GTA V Single Player [ Open Source ]</h1>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/version-v1.0.0-blue" alt="Version">
+  <img src="https://img.shields.io/badge/version-v1.1-blue" alt="Version">
   <img src="https://img.shields.io/badge/platform-PC-brightgreen" alt="Platform">
   <img src="https://img.shields.io/badge/license-MIT-lightgrey" alt="License">
 </p>
