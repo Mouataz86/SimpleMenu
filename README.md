@@ -1,135 +1,171 @@
-<h1 align="center">Simple Mod Menu For GTA V Single Player [ Open Source ]</h1>
-<h2 align="center">The Latest Version Currently Is: V1.1</h2>
-<p><b>Developer Announcement: Hello, I'm working hard on the new update v1.2 that contains so many features. I took your feedbacks as an important request to all of my users!. The new update may take a while duo to hardcodind and many features on the way... Thank you again for 1k downloads!</b></p>
+<h1 align="center">SimpleMenu for GTA V Single Player – Open Source Mod Menu</h1>
+<h2 align="center">Current Stable Version: v1.2</h2>
+
 <p align="center">
-  <img src="https://img.shields.io/badge/version-v1.1-blue" alt="Version">
+  <img src="https://img.shields.io/badge/version-v1.2-blue" alt="Version">
   <img src="https://img.shields.io/badge/platform-PC-brightgreen" alt="Platform">
   <img src="https://img.shields.io/badge/license-MIT-lightgrey" alt="License">
 </p>
 
 <p align="center">
-  <i>Customize, control, and conquer Los Santos with ease.</i>
+  <i>A clean, customizable, and powerful native-style mod menu for single-player Grand Theft Auto V.</i>
 </p>
 
-**SimpleMenu** is a powerful yet lightweight open-source C# mod menu for **Grand Theft Auto V** single player. It offers player abilities, vehicle management, weather control, teleportation, vision effects, and much more through an in-game LemonUI-powered interface.
+---
+
+## Overview
+
+**SimpleMenu** is a fast, modular, and open-source C# mod menu for GTA V (Story Mode only). Built with LemonUI for SHVDN3, it provides a native-style menu packed with tools to manipulate the player, vehicles, weather, time, weapons, NPCs, teleports, and more — all accessible in-game with no trainer overlays required.
 
 ---
 
-## 📑 Table of Contents
+## Features
 
-- [Features](#-features)
-- [Requirements](#-requirements)
-- [Installation](#-installation)
-- [Usage](#-usage)
-- [File Structure](#-file-structure)
-- [Developer Info](#-developer-info)
-- [Contributing](#-contributing)
-- [Credits](#-credits)
-- [License](#-license)
+### Player Settings
+- Toggle God Mode, Heal, Invisibility, Max Health/Armor
+- Super Jump, Fast Run, Fast Swim
+- Explosive Melee, Flaming Bullets, Super Punch
+- Disable Ragdoll, Drunk Mode
+- Player Model Changer (supports custom JSON peds)
+- Outfit Customization (components, props, reset options)
+- Random Outfit Generator
+- Max Out Player Stats (Stamina, Strength, Shooting, etc.)
+
+### Vehicle Settings
+- Full Vehicle Tuning (mods, neon, colors, wheels)
+- Turbo Boost, Auto Repair, Stick to Ground, Engine Control
+- Vehicle Spawner (from editable `vehicles.json`)
+- Lock/Unlock All Doors, Open All Doors
+- Always Seatbelt Mode (prevents crash ejection)
+
+### Weapon Options
+- Give All Weapons, Remove All, Infinite Ammo
+- Freeze Ammo Count, Explosive Bullets, Flaming Ammo
+- Super Accuracy, No Recoil
+- Experimental Custom Weapons: 
+  - Vehicle Gun (shoots cars)
+  - Ped Gun (spawns peds at bullet impact)
+  - Teleport Gun (teleports player on shot)
+
+### World & Weather
+- Time Control: Set Hour, Freeze Time
+- Weather: Change or freeze to any weather state
+- Vision FX: Night Vision, Thermal Vision, Motion Blur, Cinematic Bars, Camera Shake
+
+### NPC & Wanted Level
+- Toggle Dispatch
+- Max/Freeze/Clear Wanted Level
+- Never Wanted
+- Disable Civilian Reports
+- Everyone Ignores Player
+- Chaos Mode (aggressive NPCs)
+- Control Vehicle & Ped Density
+
+### Teleportation
+- Teleport to Waypoint
+- Famous Landmarks Menu (Maze Tower, Carrier, etc.)
+- Important Teleports (Ammu-Nations, Police Stations, Clothing Stores, Hospitals)
+- Supports loading teleports via `teleports.json`
+
+### Bodyguards
+- Spawn Companions: SWAT, Military, Gangs (Families, Ballas, Vagos)
+- Custom Vehicles, Godmode toggle
+- Fully armed and follow player
+
+### Misc Options
+- Toggle HUD Elements: Radar, Wanted Stars, Time, Crosshair, Area Name, Cash
+- Speedometer On/Off
+- Show Player Coordinates
+- Explode All Vehicles
+- Kill All Enemies
+- Force First-Person View
 
 ---
 
-## ✅ Features
-
-- 🚶‍♂️ **Player Settings**: God mode, heal, ragdoll toggle, fast run/swim, super jump, explosive melee, super punch, invisibility, drunk mode.
-- 🚗 **Vehicle Settings**: Repair/destroy, upgrade, mod tuning, neon lighting, utility toggles (auto-flip, turbo, stick to ground).
-- 🚙 **Spawn Menu**: Choose from hundreds of categorized vehicles (Sports, Planes, Boats, Emergency, etc.) using external `vehicles.json`.
-- 🧭 **Teleportation**: Instantly move to waypoint or mission objective.
-- 🔫 **Weapons**: Give all weapons, max ammo, infinite ammo, explosive melee.
-- 🚓 **Wanted Level Control**: Set/clear/freeze wanted level, never wanted mode.
-- 👁️ **Player Vision FX**: Night vision, thermal vision, motion blur, cinematic bars, camera shake.
-- 🎛️ **Customizable INI Config**: Modify `OpenKey` and menu preferences.
-- 🧩 **Modular Code**: Easy to extend with additional LemonUI menus.
-- 🛠️ **LemonUI Powered**: Clean and fast native-style UI framework.
+## New in Version 1.2
+- Added **Wanted Settings** submenu
+- Added **Custom Weapons** submenu
+- Added **Vehicle Functions** submenu
+- Added **Player Stats Maxer** (Story characters only)
+- Expanded Teleports via JSON: Ammu-Nations, Hospitals, Clothing, Police
+- Reworked **Model & Outfit Editor**
+- Improved INI logic for submenu memory
+- Added **Super Accuracy** and **No Recoil** options
 
 ---
 
-## 🔧 Requirements
+## Known Bugs & Limitations
+- **Cinematic Bars & Camera Shake**: Visual effects are placeholders (LemonUI SHVDN3 does not support them yet)
+- **Top-down view** was removed (conflicted with camera system)
+- **Custom Weapons** are experimental (Teleport/Ped/Vehicle Guns)
+- **Kill All Enemies** may not affect hostile animals or spawned bodyguards
+- **Player Stat Maxer** works only for Michael, Franklin, Trevor (Story Mode only)
 
-Before installing, ensure you have the following:
+---
+
+## Requirements
 
 - [ScriptHookV](http://www.dev-c.com/gtav/scripthookv/)
-- [ScriptHookVDotNet 3](https://github.com/crosire/scripthookvdotnet)
+- [ScriptHookVDotNet v3](https://github.com/crosire/scripthookvdotnet)
 - [.NET Framework 4.8+](https://dotnet.microsoft.com/en-us/download/dotnet-framework/net48)
-- [LemonUI (SHVDN3)](https://github.com/LemonUIbyLemon/LemonUI)
+- [LemonUI for SHVDN3](https://github.com/LemonUIbyLemon/LemonUI)
 - [Newtonsoft.Json](https://www.newtonsoft.com/json)
 
 ---
 
-## 📦 Installation
+## Installation
 
-1. Download the latest release from the [releases](https://github.com/Mouataz86/SimpleMenu/releases) page.
-2. Extract the files.
-3. Copy the following to your `Grand Theft Auto V/scripts/` folder:
-- SimpleMenu.dll
-- SimpleMenu.ini
-- Newtonsoft.Json.dll
-- LemonUI.SHVDN3.dll
-- SM Data ( Contains Vehicles.json )
-
-
-4. Launch the game and press your configured menu key (default is `F10`).
+1. Download the latest release from the [Releases](https://github.com/Mouataz86/SimpleMenu/releases) page.
+2. Install ScriptHookV and ScriptHookVDotNet3 as required.
+3. Copy the contents of the archive into your GTA V `scripts` folder.
+4. Launch the game and press `F10` (or the configured key) to open the menu.
 
 ---
 
-## 🎮 Usage
+## Hotkeys (SimpleMenu.ini)
 
-- Press your configured key (`F10` by default) to toggle the menu.
-- Use arrow keys or controller to navigate.
-- Toggle features, spawn vehicles, modify player and world state.
+```ini
+[Menu]
+OpenKey = F10
+LastUsedTab = SimpleMenu
 
----
+[Hotkeys]
+ToggleGodMode = NumPad1
+GiveAllWeapons = NumPad2
+FreezeAmmo = NumPad3
+NeverWanted = NumPad4
+ToggleSpeedometer = NumPad5
+TeleportToWaypoint = NumPad6
+ToggleFastRun = NumPad7
+ToggleSuperJump = NumPad8
+```
+## Developer Info
 
-## 📁 File Structure
+- **Telegram:** https://t.me/MO3IZO
+- **E-mail:** admin@mo3izo-tech.tk
+- **Paypal ( If You Want To Support ):contact@mo3izo-tech.tk**
+- **Gta5-Mods.com:** https://www.gta5-mods.com/users/Mouataz
 
-Grand Theft Auto V/
-- SimpleMenu.dll
-- SimpleMenu.ini
-- Newtonsoft.Json.dll
-- LemonUI.SHVDN3.dll
-- SM Data ( Contains Vehicles.json )
+## Contributing
+Want to help improve the mod?
 
+Fork the repository
 
-- `SimpleMenu.dll` — The compiled mod menu script.
-- `SimpleMenu.ini` — Holds user-editable menu preferences.
-- `vehicles.json` — All categorized spawnable vehicles.
+Submit pull requests
 
----
+Suggest features via GitHub Issues
 
-## 👨‍💻 Developer Info
+## Credits
+Developed by @Mouataz86
 
-- 💡 The project uses **LemonUI** for all menu rendering.
-- 📦 Vehicle categories are loaded from `vehicles.json` using **Newtonsoft.Json**.
-- 🎯 You can expand the mod by:
-  - Adding more submenus with `NativeMenu`.
-  - Appending new vehicle categories to `vehicles.json`.
-  - Editing the `SimpleMenu.ini` to customize behavior.
+LemonUI by Justalemon
 
----
+Newtonsoft.Json by James Newton-King
 
-## 🤝 Contributing
+ScriptHookVDotNet by Crosire
 
-Want to improve this mod?
+Special thanks to GitHub testers and community feedback
 
-1. Fork this repository
-2. Create a feature branch (`git checkout -b feature/some-feature`)
-3. Commit your changes
-4. Push to your fork and submit a pull request
-
-For developers: please see `README-DEV.md` for structure details.
-
----
-
-## ✨ Credits
-
-- **@Mouataz86** – Lead developer & project maintainer.
-- **LemonUI by Justalemon** – [LemonUI GitHub](https://github.com/LemonUIbyLemon/LemonUI)
-- **Newtonsoft.Json by James Newton-King** – [Official Site](https://www.newtonsoft.com/json)
-- **ScriptHookVDotNet & ScriptHookV authors** – Scripting foundation.
-
----
-
-## 📜 License
-
-This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
+## License
+This project is licensed under the MIT License — free to use, modify, and distribute.
 
