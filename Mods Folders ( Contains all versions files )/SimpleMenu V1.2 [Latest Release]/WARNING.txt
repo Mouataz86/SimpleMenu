@@ -1,0 +1,6 @@
+** WARNING ABOUT MODEL CHANGER **
+
+So ma bad I put the JSON Loader at the line 400+, so It's low on loading models, fast switching or rapid changing your model can cause your game
+to freeze or crash because models are not loaded fast ( Depends on your storage hardware speed ).
+
+To maybe handle that I've added a 3sec cooldown after each change to let the game load the models!
