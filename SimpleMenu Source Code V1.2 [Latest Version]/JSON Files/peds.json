@@ -1,0 +1,53 @@
+{
+  "Story Characters": [
+    { "name": "Michael", "model": "player_zero" },
+    { "name": "Franklin", "model": "player_one" },
+    { "name": "Trevor", "model": "player_two" }
+  ],
+  "Civilians - Male": [
+    { "name": "Beach Male", "model": "a_m_y_beach_01" },
+    { "name": "Business Male", "model": "a_m_y_business_01" },
+    { "name": "Skater", "model": "a_m_y_skater_01" },
+    { "name": "Hippy", "model": "a_m_y_hippy_01" },
+    { "name": "Golfer", "model": "a_m_y_golfer_01" },
+    { "name": "Runner", "model": "a_m_y_runner_01" },
+    { "name": "Construction Worker", "model": "s_m_y_construct_01" },
+    { "name": "Dock Worker", "model": "s_m_y_dockwork_01" },
+    { "name": "Garbage Worker", "model": "s_m_y_garbage" },
+    { "name": "Gardener", "model": "s_m_m_gardener_01" }
+  ],
+  "Civilians - Female": [
+    { "name": "Business Woman", "model": "a_f_y_business_01" },
+    { "name": "Beach Female", "model": "a_f_y_beach_01" },
+    { "name": "Runner Female", "model": "a_f_y_runner_01" },
+    { "name": "Clubber", "model": "a_f_y_clubcust_01" },
+    { "name": "Hipster Female", "model": "a_f_y_hipster_01" },
+    { "name": "Hiker Female", "model": "a_f_y_hiker_01" },
+    { "name": "Tourist Female", "model": "a_f_y_tourist_01" },
+    { "name": "Golfer Female", "model": "a_f_y_golfer_01" },
+    { "name": "Topless Beach", "model": "a_f_y_beach_02" },
+    { "name": "Skater Female", "model": "a_f_y_skater_01" }
+  ],
+  "Emergency Services": [
+    { "name": "Police Officer", "model": "s_m_y_cop_01" },
+    { "name": "Sheriff", "model": "s_m_y_sheriff_01" },
+    { "name": "Paramedic", "model": "s_m_m_paramedic_01" },
+    { "name": "Fireman", "model": "s_m_y_fireman_01" },
+    { "name": "Highway Cop", "model": "s_m_y_hwaycop_01" },
+    { "name": "Security Guard", "model": "s_m_m_security_01" }
+  ],
+  "Gang Members": [
+    { "name": "Ballas Member", "model": "g_m_y_ballaeast_01" },
+    { "name": "Families Member", "model": "g_m_y_famca_01" },
+    { "name": "Vagos Member", "model": "g_m_y_mexgang_01" },
+    { "name": "Lost MC", "model": "g_m_y_lost_01" },
+    { "name": "Triad Member", "model": "g_m_m_chigoon_01" }
+  ],
+  "Professionals": [
+    { "name": "Chef", "model": "s_m_m_linecook" },
+    { "name": "Pilot", "model": "s_m_m_pilot_01" },
+    { "name": "Postal Worker", "model": "s_m_m_postal_01" },
+    { "name": "Janitor", "model": "s_m_m_janitor" },
+    { "name": "Bartender", "model": "s_f_y_bartender_01" }
+  ]
+}

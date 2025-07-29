@@ -1,0 +1,32 @@
+{
+  "SWAT": {
+    "pedModel": "s_m_y_swat_01",
+    "vehicleModel": "riot",
+    "weapon": "WEAPON_CARBINERIFLE"
+  },
+  "Cops": {
+    "pedModel": "s_m_y_cop_01",
+    "vehicleModel": "police3",
+    "weapon": "WEAPON_PUMPSHOTGUN"
+  },
+  "Military": {
+    "pedModel": "s_m_y_marine_03",
+    "vehicleModel": "crusader",
+    "weapon": "WEAPON_COMBATMG"
+  },
+  "GSF": {
+    "pedModel": "g_m_y_famca_01",
+    "vehicleModel": "manana",
+    "weapon": "WEAPON_MICROSMG"
+  },
+  "Ballas": {
+    "pedModel": "g_m_y_ballaeast_01",
+    "vehicleModel": "tornado",
+    "weapon": "WEAPON_PISTOL"
+  },
+  "Vagos": {
+    "pedModel": "g_m_y_mexgoon_01",
+    "vehicleModel": "chino",
+    "weapon": "WEAPON_MACHINEPISTOL"
+  }
+}
